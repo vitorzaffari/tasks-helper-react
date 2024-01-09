@@ -1,0 +1,47 @@
+.sidebar-component{
+    flex:1;
+    /* min-height: 100%; */
+    max-width: 400px;
+    background-color: rgb(253, 242, 228);
+    color: black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h2{
+    /* border: 1px solid red; */
+
+        margin-top: 20%;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    & button{
+        margin-top: 10%;
+        background-color: transparent;
+        border: none;
+        width: fit-content;
+        padding: .8rem 1.2rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: 200;
+        border-radius: 5px;
+        text-transform: capitalize;
+        color: rgb(194, 164, 153);
+        /* border: 1px solid red; */
+        box-shadow: 2px 2px 2px #22222215;
+        transition: background-color 200ms ease, opacity 100ms ease;
+        user-select: none;
+    &:hover{
+        background-color: rgb(255, 241, 223);
+    }
+    &:active{
+        background-color: rgb(255, 238, 216);
+    }
+    &:disabled{
+        opacity: .5;
+        cursor: default;
+    }
+    }
+
+}
+
