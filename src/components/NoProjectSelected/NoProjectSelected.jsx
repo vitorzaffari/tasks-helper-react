@@ -9,7 +9,6 @@ const NoProjectSelected = ({createNewProject}) => {
         <h4>Or create a new one</h4>
         <button onClick={createNewProject}>create new project</button>
       </div>
-      <img className='clipboard-image' src="src/assets/clipboard01.png" alt="Clipboard project image" />
     </div>
   )
 }
