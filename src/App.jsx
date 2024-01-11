@@ -3,6 +3,7 @@ import NewProjectForm from "./components/NewProjectForm/NewProjectForm"
 import NoProjectSelected from "./components/NoProjectSelected/NoProjectSelected"
 import Sidebar from "./components/Sidebar/Sidebar"
 import SelectedProject from "./components/SelectedProject/SelectedProject"
+import WindowSizeWarning from "./components/WindowSizeWarning/WindowSizeWarning"
 
 function App() {
   const [projectsCurrentState, setProjectsCurrentState] = useState({
@@ -51,7 +52,7 @@ function App() {
       allProjects: newProjectsArray
     }))
 
-    console.log(newProject)
+    // console.log(newProject)
   }
 
   function deleteProject(id){
@@ -93,6 +94,7 @@ function App() {
 
   return (
     <main>
+      <WindowSizeWarning />
       <Sidebar createNewProject={createNewProject} isCreating={isCreatingProject} allProjects={projectsCurrentState.allProjects} selectProject={selectProject}/>
       {content}
     </main>

@@ -20,7 +20,7 @@ const TaskContainer = ({addTaskToProject, tasks}) => {
             </div>
             <div className='tasks-wrapper'>
                 {tasks.map(task => (
-                    <li key={task.id}>{task.name}</li>
+                    <li className='single-task' key={task.id}>{task.name}</li>
                 ))}
             </div>
         </div>
